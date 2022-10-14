@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/layout";
+import Canvas from "./sections/canvas";
 import Intro from "./sections/intro";
 import Main from "./sections/main";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Layout>
         <Main />
         <Intro />
+        <Canvas />
       </Layout>
     </div>
   );
