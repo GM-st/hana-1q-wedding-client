@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'HanaFont';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('/fonts/HanaM.woff') format('woff');
+}

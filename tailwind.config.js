@@ -5,7 +5,20 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        hanafont: ["HanaFont"],
+      },
+    },
   },
+  variants: {
+    extend: {
+      fontFamily: ["hover", "focus"],
+    },
+  },
+
   plugins: [],
-}
+  corePlugins: {
+    fontFamily: true,
+  },
+};
