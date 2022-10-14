@@ -19,7 +19,7 @@ const Header = () => {
               width="60%"
               height="80%"
             />
-            <span className="ml-3 text-xl text-teal-600">1Q WEDDING</span>
+            <span className="ml-3 text-xl text-teal-600">하나 원큐 웨딩</span>
           </a>
           <nav className="items-stretch hidden space-x-3 md:flex">
             <a
@@ -27,7 +27,7 @@ const Header = () => {
               href="#main-section"
               className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
             >
-              HOME
+              메인
             </a>
             <a
               rel="noopener noreferrer"
@@ -41,28 +41,28 @@ const Header = () => {
               href="#canvas-section"
               className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
             >
-              CANVAS
+              자필편지
             </a>
             <a
               rel="noopener noreferrer"
               href="#recorder-section"
               className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
             >
-              RECORDER
+              동영상편지
             </a>
             <a
               rel="noopener noreferrer"
               href="#player-section"
               className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
             >
-              PLAYER
+              영상재생
             </a>
             <a
               rel="noopener noreferrer"
               href="/settings"
               className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
             >
-              SETTINGS
+              서비스 이용하기
             </a>
           </nav>
           <button className="flex justify-end p-4 md:hidden">
