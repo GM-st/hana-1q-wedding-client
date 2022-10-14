@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Animation from "../../components/animation";
+import Qrcode from "../../components/qrcode";
 
 const Main = () => {
   const appStoreURL =
@@ -23,7 +24,9 @@ const Main = () => {
               하나 1Q 웨딩에서<br></br>송금을 쉽고 간편하게
             </h1>
             <div class="flex flex-col items-center bg-white w-1/2 rounded-2xl">
-              <div className="m-10">{/* <Qrcode /> */}</div>
+              <div className="m-10">
+                <Qrcode />
+              </div>
               <div className="flex flex-row">
                 <div class="flex flex-row justify-center bg-black w-52 h-12 rounded-lg m-3 shadow-lg">
                   <div>
