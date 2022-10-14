@@ -4,7 +4,7 @@ import Footer from "./footer";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="font-hanafont">
       <Header />
       <div>{children}</div>
       <Footer />
