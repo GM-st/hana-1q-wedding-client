@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
 import Layout from "../components/layout";
+import Intro from "./sections/intro";
 import Main from "./sections/main";
 
 export default function Home() {
@@ -13,6 +13,7 @@ export default function Home() {
       </Head>
       <Layout>
         <Main />
+        <Intro />
       </Layout>
     </div>
   );
