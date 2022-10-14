@@ -37,7 +37,7 @@ const Main = () => {
                       href="https://itunes.apple.com/kr/app/%ED%86%A0%EC%8A%A4/id839333328?mt=8"
                       rel="noreferrer noopener"
                     >
-                      <img
+                      <Image
                         src={appStoreURL}
                         width="40"
                         height="40"
@@ -56,7 +56,7 @@ const Main = () => {
                       href="https://itunes.apple.com/kr/app/%ED%86%A0%EC%8A%A4/id839333328?mt=8"
                       rel="noreferrer noopener"
                     >
-                      <img
+                      <Image
                         src={playStoreURL}
                         width="40"
                         height="40"
