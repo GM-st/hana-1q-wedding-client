@@ -8,4 +8,4 @@ const Player = () => {
     );
 };
 
-export default PlayeP;
+export default Player;
