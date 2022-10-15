@@ -32,7 +32,7 @@ const Viewer = () => {
   ];
 
   return (
-    <div>
+    <div id="viewer-section">
       <div className="sm:h-64 xl:h-80 2xl:h-96 mx-56">
         <Carousel>
           {videoProperties.map((videoObject) => {

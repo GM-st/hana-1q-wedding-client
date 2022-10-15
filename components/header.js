@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 
 const Header = () => {
+  useEffect(() => {
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    });
+  });
+
   return (
     <div>
       <header className="py-3 bg-transparent text-gray-800 sticky top-0 z-50 shadow-lg">
@@ -31,10 +42,10 @@ const Header = () => {
             </a>
             <a
               rel="noopener noreferrer"
-              href="#viewer-section"
+              href="#intro-section"
               className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
             >
-              축하영상
+              소개
             </a>
             <a
               rel="noopener noreferrer"
@@ -45,21 +56,14 @@ const Header = () => {
             </a>
             <a
               rel="noopener noreferrer"
-              href="#recorder-section"
+              href="#viewer-section"
               className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
             >
-              동영상편지
+              영상편지
             </a>
             <a
               rel="noopener noreferrer"
-              href="#player-section"
-              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
-            >
-              영상재생
-            </a>
-            <a
-              rel="noopener noreferrer"
-              href="/settings"
+              href="https://localhost:8080"
               className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
             >
               서비스 이용하기
