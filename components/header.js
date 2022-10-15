@@ -14,8 +14,8 @@ const Header = () => {
   });
 
   return (
-    <div>
-      <header className="py-3 bg-transparent text-gray-800 sticky top-0 z-50 shadow-lg">
+    <>
+      <header className="sticky top-0 z-50 shadow-lg py-3 text-gray-800 bg-white">
         <div className="container flex justify-between h-10 mx-auto">
           <a
             rel="noopener noreferrer"
@@ -87,7 +87,7 @@ const Header = () => {
           </button>
         </div>
       </header>
-    </div>
+    </>
   );
 };
 
