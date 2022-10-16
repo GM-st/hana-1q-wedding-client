@@ -4,6 +4,11 @@ import Animation from "../../components/animation";
 import Image from "next/image";
 
 const About = () => {
+  const appStoreURL =
+    "https://static.toss.im/png-icons/timeline/applekorea.png";
+  const playStoreURL =
+    "https://static.toss.im/png-icons/timeline/googleplay.png";
+    
   return (
     <div>
       <div class="flex flex-col items-center bg-white w-2/5 rounded-2xl shadow-2xl">
@@ -53,15 +58,15 @@ const About = () => {
       </div>
 
       <div className="flex flex-wrap justify-center mt-4">
-            <div className="items-center">
-              <a
-                href="#canvas-section"
-                className="flex title-font font-medium items-center text-gray-900 md:mb-0"
-              >
-                <Animation width={100} height={100} />
-              </a>
-            </div>
-          </div>
+        <div className="items-center">
+          <a
+            href="#canvas-section"
+            className="flex title-font font-medium items-center text-gray-900 md:mb-0"
+          >
+            <Animation width={100} height={100} />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
