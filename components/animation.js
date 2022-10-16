@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "react-lottie-player";
-import lottieJson from "/public/arrow-down.json";
+import lottieJson from "/public/arrow-down-white.json";
 
 const Animation = ({ width, height }) => {
   return (

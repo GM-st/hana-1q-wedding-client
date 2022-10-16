@@ -1,21 +1,11 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
-  useEffect(() => {
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-          behavior: "smooth",
-        });
-      });
-    });
-  });
-
   return (
     <>
-      <header className="sticky top-0 z-50 shadow-lg py-3 text-gray-800 bg-white">
+      <header className="sticky top-0 z-50 shadow-lg py-3 text-gray-800 bg-cyan-900">
         <div className="container flex justify-between h-10 mx-auto">
           <a
             rel="noopener noreferrer"
@@ -30,44 +20,44 @@ const Header = () => {
               width="60%"
               height="80%"
             />
-            <span className="ml-3 text-xl text-teal-600">하나 원큐 웨딩</span>
+            <span className="ml-3 text-xl text-white">하나 원큐 웨딩</span>
           </a>
-          <nav className="items-stretch hidden space-x-3 md:flex">
-            <a
-              rel="noopener noreferrer"
-              href="#main-section"
-              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
-            >
-              메인
-            </a>
-            <a
-              rel="noopener noreferrer"
-              href="#intro-section"
-              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
-            >
-              소개
-            </a>
-            <a
-              rel="noopener noreferrer"
-              href="#canvas-section"
-              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
-            >
-              자필편지
-            </a>
-            <a
-              rel="noopener noreferrer"
-              href="#viewer-section"
-              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
-            >
-              영상편지
-            </a>
-            <a
-              rel="noopener noreferrer"
-              href="https://localhost:8080"
-              className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent text-teal-600 hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
-            >
-              서비스 이용하기
-            </a>
+          <nav className="items-stretch hidden space-x-3 md:flex text-white">
+            <Link href="/">
+              <a
+                rel="noopener noreferrer"
+                className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
+              >
+                소개
+              </a>
+            </Link>
+            <Link href="/canvas">
+              <a
+                rel="noopener noreferrer"
+                href=""
+                className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
+              >
+                자필편지
+              </a>
+            </Link>
+            <Link href="/recorder">
+              <a
+                rel="noopener noreferrer"
+                href="#viewer-section"
+                className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
+              >
+                영상편지
+              </a>
+            </Link>
+            <Link href="https://localhost:8080/" passHref>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
+              >
+                서비스 이용하기
+              </a>
+            </Link>
           </nav>
           <button className="flex justify-end p-4 md:hidden">
             <svg

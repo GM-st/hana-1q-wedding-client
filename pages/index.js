@@ -1,9 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/layout";
-import Canvas from "./sections/canvas";
 import Intro from "./sections/intro";
 import Main from "./sections/main";
-import Recorder from "./sections/recorder";
 import Viewer from "./sections/viewer";
 
 export default function Home() {
@@ -17,9 +15,7 @@ export default function Home() {
       <Layout>
         <Main />
         <Intro />
-        <Canvas />
         <Viewer />
-        <Recorder />
       </Layout>
     </div>
   );
