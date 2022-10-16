@@ -1,6 +1,7 @@
 import React from "react";
 import Qrcode from "../../components/qrcode";
 import Animation from "../../components/animation";
+import Image from "next/image";
 
 const About = () => {
   return (
