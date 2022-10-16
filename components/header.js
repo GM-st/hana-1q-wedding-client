@@ -5,7 +5,7 @@ import Link from "next/link";
 const Header = () => {
   return (
     <>
-      <header className="sticky top-0 z-50 shadow-lg py-3 text-gray-800 bg-cyan-900">
+      <header className="sticky top-0 z-50 py-3 text-teal-600 bg-gray-100">
         <div className="container flex justify-between h-10 mx-auto">
           <a
             rel="noopener noreferrer"
@@ -20,13 +20,13 @@ const Header = () => {
               width="60%"
               height="80%"
             />
-            <span className="ml-3 text-xl text-white">하나 원큐 웨딩</span>
+            <span className="ml-3 text-xl">하나 원큐 웨딩</span>
           </a>
-          <nav className="items-stretch hidden space-x-3 md:flex text-white">
+          <nav className="items-stretch hidden space-x-3 md:flex">
             <Link href="/">
               <a
                 rel="noopener noreferrer"
-                className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
+                className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent hover:border-teal-600 focus:border-teal-600 no-underline"
               >
                 소개
               </a>
@@ -35,7 +35,7 @@ const Header = () => {
               <a
                 rel="noopener noreferrer"
                 href=""
-                className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
+                className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent hover:border-teal-600 focus:border-teal-600 no-underline"
               >
                 자필편지
               </a>
@@ -44,7 +44,7 @@ const Header = () => {
               <a
                 rel="noopener noreferrer"
                 href="#viewer-section"
-                className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
+                className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent hover:border-teal-600 focus:border-teal-600 no-underline"
               >
                 영상편지
               </a>
@@ -53,7 +53,7 @@ const Header = () => {
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent hover:border-teal-600 hover:text-teal-800 focus:border-teal-600 no-underline"
+                className="flex items-center text-lg px-4 -mb-1 border-b-2 border-transparent hover:border-teal-600 focus:border-teal-600 no-underline"
               >
                 서비스 이용하기
               </a>

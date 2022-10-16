@@ -8,79 +8,67 @@ const Main = () => {
     "https://static.toss.im/png-icons/timeline/applekorea.png";
   const playStoreURL =
     "https://static.toss.im/png-icons/timeline/googleplay.png";
+  const videoObjectSrc = "videos/videoGate.mp4";
 
   return (
     <div id="main-section">
-      <section className="text-gray-600 body-font overflow-hidden bg-cyan-900">
-        {/* <Image
-          className="absolute inset-0 h-full w-full object-cover opacity-20"
-          layout="fill"
-          src="/hana-background.jpeg"
-          alt="background"
-        /> */}
-        <div className="px-5 py-24 mx-auto justify-items-center">
-          <div className=" flex flex-col items-center">
-            <h1 className="items-center mb-14 text-white text-center text-7xl">
-              하나 1Q 웨딩에서<br></br>결혼식 모든 절차를 한번에
-            </h1>
-            <div class="flex flex-col items-center bg-white w-2/5 rounded-2xl bg-opacity-100">
-              <div className="m-10">
-                <Qrcode />
+      <div className="relative flex items-center justify-center h-screen mb-12 overflow-hidden bg-white">
+        <div className="relative z-30 p-5 text-white bg-opacity-50 rounded-xl mb-60 items-center">
+          <h1 className="flex flex-row text-black text-6xl items-center justify-center text-center leading-tight">
+            하나 1Q 웨딩에서<br></br>결혼식 모든 절차를 한번에
+          </h1>
+          <div className="flex flex-row items-center justify-center mt-20">
+            <div class="flex flex-row items-center justify-center bg-black w-52 h-12 rounded-lg m-3 shadow-lg mt-10 bg-opacity-80">
+              <div className="mr-2 mt-1">
+                <a
+                  type="button"
+                  aria-disabled="false"
+                  target="_blank"
+                  href="https://itunes.apple.com/kr/app/%ED%86%A0%EC%8A%A4/id839333328?mt=8"
+                  rel="noreferrer noopener"
+                >
+                  <Image
+                    src={appStoreURL}
+                    width="30"
+                    height="30"
+                    alt="app-store"
+                  />
+                </a>
               </div>
-              <div className="flex flex-row">
-                <div class="flex flex-row justify-center bg-black w-52 h-12 rounded-lg m-3 shadow-lg mb-10">
-                  <div>
-                    <a
-                      type="button"
-                      aria-disabled="false"
-                      target="_blank"
-                      href="https://itunes.apple.com/kr/app/%ED%86%A0%EC%8A%A4/id839333328?mt=8"
-                      rel="noreferrer noopener"
-                    >
-                      <Image
-                        src={appStoreURL}
-                        width="40"
-                        height="40"
-                        alt="app-store"
-                      />
-                    </a>
-                  </div>
-                  <div className="text-white">App Store</div>
-                </div>
-                <div class="flex flex-row justify-center bg-black w-52 h-12 rounded-lg m-3 shadow-lg">
-                  <div>
-                    <a
-                      type="button"
-                      aria-disabled="false"
-                      target="_blank"
-                      href="https://itunes.apple.com/kr/app/%ED%86%A0%EC%8A%A4/id839333328?mt=8"
-                      rel="noreferrer noopener"
-                    >
-                      <Image
-                        src={playStoreURL}
-                        width="40"
-                        height="40"
-                        alt="app-store"
-                      />
-                    </a>
-                  </div>
-                  <div className="text-white">Google Play</div>
-                </div>
-              </div>
+              <div className="text-white">App Store</div>
             </div>
-          </div>
-          <div className="flex flex-wrap justify-center mt-4">
-            <div className="items-center">
-              <a
-                href="#canvas-section"
-                className="flex title-font font-medium items-center text-gray-900 md:mb-0"
-              >
-                <Animation width={100} height={100} />
-              </a>
+            <div class="flex flex-row items-center justify-center bg-black w-52 h-12 rounded-lg m-3 shadow-lg mt-10 bg-opacity-80">
+              <div className="mr-2 mt-1">
+                <a
+                  type="button"
+                  aria-disabled="false"
+                  target="_blank"
+                  href="https://itunes.apple.com/kr/app/%ED%86%A0%EC%8A%A4/id839333328?mt=8"
+                  rel="noreferrer noopener"
+                >
+                  <Image
+                    src={playStoreURL}
+                    width="30"
+                    height="30"
+                    alt="app-store"
+                  />
+                </a>
+              </div>
+              <div className="text-white">Google Play</div>
             </div>
           </div>
         </div>
-      </section>
+        <video
+          playsInline
+          autoPlay
+          muted
+          loop
+          className="absolute z-10 w-auto min-w-full min-h-full max-w-none opacity-100"
+        >
+          <source src={videoObjectSrc} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
   );
 };

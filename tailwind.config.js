@@ -11,6 +11,9 @@ module.exports = {
         hanafont: ["HanaFont"],
       },
     },
+    colors: {
+      hana: "#008485",
+    },
   },
   variants: {
     extend: {

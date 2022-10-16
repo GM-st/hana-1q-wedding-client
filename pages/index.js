@@ -14,8 +14,8 @@ export default function Home() {
       </Head>
       <Layout>
         <Main />
-        <Intro />
-        <Viewer />
+        {/* <Intro />
+        <Viewer /> */}
       </Layout>
     </div>
   );
