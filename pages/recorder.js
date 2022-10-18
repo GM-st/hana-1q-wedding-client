@@ -81,10 +81,10 @@ const Recorder = () => {
     <>
       <Layout>
         <div id="recorder-section">
-          <section className="text-gray-600 body-font justify-items-center">
-            <div className="flex justify-center mx-20 mt-20">
-              <div className="flex-col items-center place-items-center">
-                <div>
+        <section>
+          <div className="bg-teal-800">
+            <div className="flex flex-col justify-center h-screen items-center">
+                <div className="bg-gray-100 rounded-lg ring-blue-100/50 shadow-2xl shadow-indigo-500/40 justify-center">
                   <Webcam
                     audio={false}
                     ref={webcamRef}
@@ -93,25 +93,25 @@ const Recorder = () => {
                 </div>
                 <div className="mt-20 text-center">
                   {capturing ? (
-                    <div className="mt-5 rounded bg-cyan-700 text-white text-lg shadow-lg">
-                      <button onClick={handleStopCaptureClick}>
+                    <div className="">
+                      <button onClick={handleStopCaptureClick} className="w-80 rounded-3xl h-20 px-14 m-2 text-2xl border-2 hover:bg-blue-100 hover:text-teal-700 text-white font-bold text-center">
                         Stop Capture
                       </button>
                     </div>
                   ) : (
-                    <div className="mt-5 rounded bg-cyan-700 text-white text-lg shadow-lg">
-                      <button onClick={handleStartCaptureClick}>
+                    <div className="">
+                      <button onClick={handleStartCaptureClick} className="w-80 rounded-3xl h-20 px-14 m-2 text-2xl border-2 hover:bg-blue-100 hover:text-teal-700 text-white font-bold text-center">
                         축하 영상 보내기
                       </button>
                     </div>
                   )}
                   {recordedChunks.length > 0 && (
                     <div>
-                      <div className="mt-5 rounded bg-cyan-700 text-white text-lg shadow-lg">
-                        <button onClick={handleDownload}>Download</button>
+                      <div className="">
+                        <button onClick={handleDownload} className="w-80 rounded-3xl h-20 px-14 m-2 text-2xl border-2 hover:bg-blue-100 hover:text-teal-700 text-white font-bold text-center">Download</button>
                       </div>
-                      <div className="mt-5 rounded bg-cyan-700 text-white text-lg shadow-lg">
-                        <button onClick={handleUpload}>Upload</button>
+                      <div className="">
+                        <button onClick={handleUpload} className="w-80 rounded-3xl h-20 px-14 m-2 text-2xl border-2 hover:bg-blue-100 hover:text-teal-700 text-white font-bold text-center">Upload</button>
                       </div>
                     </div>
                   )}
