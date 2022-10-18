@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Animation from "../../components/animation";
-import Qrcode from "../../components/qrcode";
 
 const Main = () => {
   const appStoreURL =
