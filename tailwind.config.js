@@ -9,10 +9,13 @@ module.exports = {
     extend: {
       fontFamily: {
         hanafont: ["HanaFont"],
+        antonfont: ["AntonFont"],
+        dohyunfont: ["DohyunFont"],
       },
     },
     colors: {
       hana: "#008485",
+      logo: "#04bba6",
     },
   },
   variants: {

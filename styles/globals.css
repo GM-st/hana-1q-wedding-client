@@ -8,3 +8,17 @@
   font-weight: 400;
   src: local(''), url('/fonts/HanaM.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'AntonFont';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('/fonts/Anton-Regular.tff') format('tff');
+}
+
+@font-face {
+  font-family: 'DohyunFont';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('/fonts/BMDOHYEON_otf.otf') format('otf');
+}

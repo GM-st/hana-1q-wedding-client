@@ -5,7 +5,7 @@ import Link from "next/link";
 const Header = () => {
   return (
     <>
-      <header className="sticky top-0 z-50 py-3 text-teal-600 bg-gray-100">
+      <header className="sticky top-0 z-50 py-3 text-hana bg-gray-100">
         <div className="container flex justify-between h-10 mx-auto">
           <a
             rel="noopener noreferrer"
@@ -13,14 +13,18 @@ const Header = () => {
             aria-label="Back to homepage"
             className="flex items-center p-2 no-underline"
           >
-            <Image
-              // className="object-cover object-center rounded"
-              alt="hero"
-              src="/hana-1q-logo-0.png"
-              width="60%"
-              height="50%"
-            />
-            <span className="ml-3 text-xl">하나 원큐 웨딩</span>
+            <div className="mt-1">
+              <Image
+                // className="object-cover object-center rounded"
+                alt="hero"
+                src="/hana-1q-logo-0.png"
+                width="60%"
+                height="50%"
+              />
+            </div>
+            <div className="text-4xl font-hanafont text-logo font-extrabold ml-2">
+              Wedding
+            </div>
           </a>
           <nav className="items-stretch hidden space-x-3 md:flex">
             <Link href="/">
