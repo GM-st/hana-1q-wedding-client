@@ -81,9 +81,9 @@ const Recorder = () => {
     <>
       <Layout>
         <div id="recorder-section">
-        <section>
-          <div className="bg-teal-800">
-            <div className="flex flex-col justify-center h-screen items-center">
+          <section>
+            <div className="bg-teal-800">
+              <div className="flex flex-col justify-center h-screen items-center">
                 <div className="bg-gray-100 rounded-lg ring-blue-100/50 shadow-2xl shadow-indigo-500/40 justify-center">
                   <Webcam
                     audio={false}
@@ -94,13 +94,19 @@ const Recorder = () => {
                 <div className="mt-20 text-center">
                   {capturing ? (
                     <div className="">
-                      <button onClick={handleStopCaptureClick} className="w-80 rounded-3xl h-20 px-14 m-2 text-2xl border-2 hover:bg-blue-100 hover:text-teal-700 text-white font-bold text-center">
+                      <button
+                        onClick={handleStopCaptureClick}
+                        className="w-80 rounded-3xl h-20 px-14 m-2 text-2xl border-2 hover:bg-blue-100 hover:text-teal-700 text-white font-bold text-center"
+                      >
                         Stop Capture
                       </button>
                     </div>
                   ) : (
                     <div className="">
-                      <button onClick={handleStartCaptureClick} className="w-80 rounded-3xl h-20 px-14 m-2 text-2xl border-2 hover:bg-blue-100 hover:text-teal-700 text-white font-bold text-center">
+                      <button
+                        onClick={handleStartCaptureClick}
+                        className="w-80 rounded-3xl h-20 px-14 m-2 text-2xl border-2 hover:bg-blue-100 hover:text-teal-700 text-white font-bold text-center"
+                      >
                         축하 영상 보내기
                       </button>
                     </div>
@@ -108,10 +114,20 @@ const Recorder = () => {
                   {recordedChunks.length > 0 && (
                     <div>
                       <div className="">
-                        <button onClick={handleDownload} className="w-80 rounded-3xl h-20 px-14 m-2 text-2xl border-2 hover:bg-blue-100 hover:text-teal-700 text-white font-bold text-center">Download</button>
+                        <button
+                          onClick={handleDownload}
+                          className="w-80 rounded-3xl h-20 px-14 m-2 text-2xl border-2 hover:bg-blue-100 hover:text-teal-700 text-white font-bold text-center"
+                        >
+                          Download
+                        </button>
                       </div>
                       <div className="">
-                        <button onClick={handleUpload} className="w-80 rounded-3xl h-20 px-14 m-2 text-2xl border-2 hover:bg-blue-100 hover:text-teal-700 text-white font-bold text-center">Upload</button>
+                        <button
+                          onClick={handleUpload}
+                          className="w-80 rounded-3xl h-20 px-14 m-2 text-2xl border-2 hover:bg-blue-100 hover:text-teal-700 text-white font-bold text-center"
+                        >
+                          Upload
+                        </button>
                       </div>
                     </div>
                   )}

@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import Intro from "./sections/intro";
 import Main from "./sections/main";
 import Viewer from "./sections/viewer";
+import Chart from "./sections/chart";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Main />
         {/* <Intro />
         <Viewer /> */}
+        <Chart />
       </Layout>
     </div>
   );
