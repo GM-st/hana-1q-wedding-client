@@ -22,7 +22,7 @@ const Header = () => {
                 height="50%"
               />
             </div>
-            <div className="text-4xl font-hanafont text-logo font-extrabold ml-2">
+            <div className="text-4xl font-hanafont text-logo font-extrabold ml-2 drop-shadow-xl">
               Wedding
             </div>
           </a>
