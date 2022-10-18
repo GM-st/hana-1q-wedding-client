@@ -16,9 +16,9 @@ const Header = () => {
             <Image
               // className="object-cover object-center rounded"
               alt="hero"
-              src="/hana-3d-logo.png"
+              src="/hana-1q-logo-0.png"
               width="60%"
-              height="80%"
+              height="50%"
             />
             <span className="ml-3 text-xl">하나 원큐 웨딩</span>
           </a>
