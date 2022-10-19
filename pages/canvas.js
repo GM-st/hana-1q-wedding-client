@@ -44,7 +44,7 @@ const Canvas = () => {
                   penColor="black"
                 />
               </div>
-              <div className="py-10">
+              <div className="py-10 flex flex-col md:flex md:flex-row">
                 <button
                   onClick={clear}
                   className="rounded-3xl h-20 px-14 m-2 text-2xl border-2 hover:bg-blue-100 hover:text-teal-700 text-white font-bold text-center"
