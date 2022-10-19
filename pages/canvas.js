@@ -33,12 +33,10 @@ const Canvas = () => {
         <section>
           <div className="bg-teal-800">
             <div className="flex flex-col justify-center h-screen items-center">
-              <div className="canvas bg-gray-100 rounded-lg ring-2 ring-blue-100/50 shadow-2xl shadow-indigo-500/40 justify-center bg-red w-screen md:w-auto">
+              <div className="canvas bg-gray-100 rounded-lg ring-2 ring-blue-100/50 shadow-2xl shadow-indigo-500/40 justify-center bg-red md:w-1/2 w-full md:h-1/2 h-full mt-20 md:mt-0">
                 <ReactSignatureCanvas
                   ref={signCanvas}
                   canvasProps={{
-                    width: 694,
-                    height: 390,
                     className: "sigCanvas canvasStyle",
                   }}
                   penColor="black"
