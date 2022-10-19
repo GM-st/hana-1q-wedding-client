@@ -26,15 +26,15 @@ const Main = () => {
                   href="https://itunes.apple.com/kr/app/%ED%86%A0%EC%8A%A4/id839333328?mt=8"
                   rel="noreferrer noopener"
                 >
-                  <Image
+                  {/* <Image
                     src={appStoreURL}
                     width="30"
                     height="30"
                     alt="app-store"
-                  />
+                  /> */}
                 </a>
               </div>
-              <div className="text-white">App Store</div>
+              <div className="text-white">로그인</div>
             </div>
             <div class="flex flex-row items-center justify-center bg-black w-52 h-12 rounded-lg m-3 shadow-lg mt-10 bg-opacity-80">
               <div className="mr-2 mt-1">
@@ -45,15 +45,15 @@ const Main = () => {
                   href="https://itunes.apple.com/kr/app/%ED%86%A0%EC%8A%A4/id839333328?mt=8"
                   rel="noreferrer noopener"
                 >
-                  <Image
+                  {/* <Image
                     src={playStoreURL}
                     width="30"
                     height="30"
                     alt="app-store"
-                  />
+                  /> */}
                 </a>
               </div>
-              <div className="text-white">Google Play</div>
+              <div className="text-white">회원가입</div>
             </div>
           </div>
         </div>
