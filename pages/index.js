@@ -17,7 +17,7 @@ export default function Home() {
         <Main />
         {/* <Intro />
         <Viewer /> */}
-        <Chart />
+        {/* <Chart /> */}
       </Layout>
     </div>
   );
