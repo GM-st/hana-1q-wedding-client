@@ -37,8 +37,8 @@ const Canvas = () => {
                 <ReactSignatureCanvas
                   ref={signCanvas}
                   canvasProps={{
-                    width: 800,
-                    height: 480,
+                    width: 694,
+                    height: 390,
                     className: "sigCanvas canvasStyle",
                   }}
                   penColor="black"
