@@ -20,7 +20,7 @@ const Main = () => {
           <div className="flex flex-col md:flex-row sm:flex-row lg:flex-row items-center justify-center mt-20">
             <div class="flex flex-row items-center justify-center bg-black w-52 h-12 rounded-lg m-3 shadow-lg mt-10 bg-opacity-80 hover:bg-teal-500 hover:opacity-80 hover:shadow-lg focus:bg-teal-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-teal-800 active:shadow-lg transition duration-150 ease-in-out">
               <div className="">
-                <Link href="https://localhost:8080/hanaLogin">
+                <Link href="http://localhost:8080/hanaLogin">
                   <a target="_blank" rel="noopener noreferrer">
                     {/* <Image
                     src={appStoreURL}
@@ -35,7 +35,7 @@ const Main = () => {
             </div>
             <div class="flex flex-row items-center justify-center bg-black w-52 h-12 rounded-lg m-3 shadow-lg mt-10 bg-opacity-80 hover:bg-teal-500 hover:opacity-80 hover:shadow-lg focus:bg-teal-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-teal-800 active:shadow-lg transition duration-150 ease-in-out">
               <div className="">
-                <Link href="https://localhost:8080/join">
+                <Link href="http://localhost:8080/join">
                 <a
                   type="button"
                   aria-disabled="false"
