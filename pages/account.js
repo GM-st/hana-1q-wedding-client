@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Layout from "../components/layout";
+import Link from "next/link";
 
 const Main = () => {
   const appStoreURL =
@@ -19,24 +20,25 @@ const Main = () => {
                 하나 1Q 웨딩에서<br></br>결혼식 모든 절차를 한번에
               </h1>
               <div className="flex flex-col md:flex-row sm:flex-row lg:flex-row items-center justify-center mt-20">
-                <div class="flex flex-row items-center justify-center bg-black w-52 h-12 rounded-lg m-3 shadow-lg mt-10 bg-opacity-80 hover:bg-teal-500 hover:opacity-80 hover:shadow-lg focus:bg-teal-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-teal-800 active:shadow-lg transition duration-150 ease-in-out">
-                  <div className="mr-2 mt-1">
-                    <a
-                      type="button"
-                      aria-disabled="false"
-                      target="_blank"
-                      href="https://itunes.apple.com/kr/app/%ED%86%A0%EC%8A%A4/id839333328?mt=8"
-                      rel="noreferrer noopener"
-                    >
-                      {/* <Image
+                <div class="flex flex-row items-center text-center justify-center bg-black w-52 h-12 rounded-lg m-3 shadow-lg mt-10 bg-opacity-80 hover:bg-teal-500 hover:opacity-80 hover:shadow-lg focus:bg-teal-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-teal-800 active:shadow-lg transition duration-150 ease-in-out">
+                  <div className="">
+                    <Link href="https://localhost:8080/write">
+                      <a
+                        type="button"
+                        aria-disabled="false"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        {/* <Image
                     src={appStoreURL}
                     width="30"
                     height="30"
                     alt="app-store"
                   /> */}
-                    </a>
+                        <div className="text-white">계좌내역 바로가기</div>
+                      </a>
+                    </Link>
                   </div>
-                  <div className="text-white">계좌내역 바로가기</div>
                 </div>
               </div>
             </div>
