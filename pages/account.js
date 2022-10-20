@@ -35,7 +35,7 @@ const Main = () => {
                     height="30"
                     alt="app-store"
                   /> */}
-                        <div className="text-white">계좌내역 바로가기</div>
+                        <div className="text-white">계좌개설 바로가기</div>
                       </a>
                     </Link>
                   </div>
