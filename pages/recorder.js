@@ -123,7 +123,9 @@ const Recorder = () => {
                       </div>
                       <div className="">
                         <button
-                          onClick={handleUpload}
+                          onClick={() => {
+                            location.href = "http://localhost:8080/hanaPoint";
+                          }}
                           className="w-80 rounded-3xl h-20 px-14 m-2 text-2xl border-2 hover:bg-blue-100 hover:text-teal-700 text-white font-bold text-center"
                         >
                           Upload
