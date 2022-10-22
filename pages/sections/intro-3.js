@@ -8,10 +8,12 @@ const Intro3 = () => {
     AOS.init();
     setPlayBack01();
     setPlayBack02();
+    setPlayBack03();
   });
 
   const videoRef01 = useRef();
   const videoRef02 = useRef();
+  const videoRef03 = useRef();
 
   const setPlayBack01 = () => {
     videoRef01.current.playbackRate = 5;
@@ -19,9 +21,13 @@ const Intro3 = () => {
   const setPlayBack02 = () => {
     videoRef02.current.playbackRate = 5;
   };
+  const setPlayBack03 = () => {
+    videoRef03.current.playbackRate = 5;
+  };
 
   const videoObjectSrc01 = "videos/celebration-canvas-2210230132.mov";
   const videoObjectSrc02 = "videos/celebration-canvas-2210230127.mov";
+  const videoObjectSrc03 = "videos/celebration-canvas-2210230500.mov";
 
   return (
     <div id="intro-section" className="bg-gray-100">
@@ -63,7 +69,7 @@ const Intro3 = () => {
                   loop
                   ref={videoRef01}
                   onCanPlay={() => setPlayBack01()}
-                  className="absolute top-[14rem] h-[8rem] left-[7.8rem] shadow-xl"
+                  className="absolute top-[14rem] h-[8rem] left-[8rem] shadow-xl w-64"
                 >
                   <source src={videoObjectSrc01} type="video/mp4" />
                   Your browser does not support the video tag.
@@ -75,9 +81,21 @@ const Intro3 = () => {
                   loop
                   ref={videoRef02}
                   onCanPlay={() => setPlayBack02()}
-                  className="absolute top-[24rem] h-[8rem] left-[7.8rem] shadow-xl"
+                  className="absolute top-[24rem] h-[8rem] left-[8rem] shadow-xl w-64"
                 >
                   <source src={videoObjectSrc02} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <video
+                  playsInline
+                  autoPlay
+                  muted
+                  loop
+                  ref={videoRef03}
+                  onCanPlay={() => setPlayBack03()}
+                  className="absolute top-[34rem] h-[8rem] left-[8rem] shadow-xl w-64"
+                >
+                  <source src={videoObjectSrc03} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
