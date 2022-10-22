@@ -3,7 +3,7 @@ import Head from "next/head";
 import Layout from "../../components/layout";
 
 const Player03 = () => {
-  const videoObjectSrc = "../videos/celebration-canvas-2210230127.mov";
+  // const videoObjectSrc = "../videos/celebration-canvas-2210230127.png";
 
   return (
     <div>
@@ -20,14 +20,14 @@ const Player03 = () => {
                 <video
                   playsInline
                   muted
-                  controls
+                  // controls
                   // loop
                   // muted
-                  poster="../hana-3d-logo.png"
-                  className="rounded-xl bg-gray-900"
+                  poster="../celebration-canvas-image.png"
+                  className="rounded-xl bg-gray bg-contain p-2 h-full w-full"
                 >
-                  <source src={videoObjectSrc} type="video/mp4" />
-                  Your browser does not support the video tag.
+                  {/* <source src={videoObjectSrc} type="video/mp4" />
+                  Your browser does not support the video tag. */}
                 </video>
               </div>
             </div>
