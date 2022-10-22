@@ -12,6 +12,15 @@ module.exports = {
         antonfont: ["AntonFont"],
         dohyunfont: ["DohyunFont"],
       },
+      animation: {
+        fadeIn: "fadeIn 2s ease-in forwards",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+      },
     },
     colors: {
       hana: "#008485",
@@ -22,6 +31,7 @@ module.exports = {
     extend: {
       fontFamily: ["hover", "focus"],
     },
+    animation: ["motion-safe"],
   },
 
   plugins: [require("flowbite/plugin")],

@@ -4,8 +4,8 @@ const Intro1 = () => {
   const videoObjectSrc = "videos/main-intro-video.MOV";
 
   return (
-    <div id="main-section" className="bg-gray-100 mx-20 my-16">
-      <div className="relative flex items-center justify-center h-screen overflow-hidden rounded-lg">
+    <div id="main-section" className="bg-gray-100 mx-40 my-20">
+      <div className="relative flex items-center justify-center h-screen overflow-hidden rounded-lg motion-safe:animate-fadeIn">
         <video
           playsInline
           autoPlay={false}
