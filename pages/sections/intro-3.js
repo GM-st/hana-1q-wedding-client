@@ -8,6 +8,9 @@ const Intro3 = () => {
     AOS.init();
   });
 
+  const videoObjectSrc01 = "videos/celebration-canvas-2210230132.mov";
+  const videoObjectSrc02 = "videos/celebration-canvas-2210230127.mov";
+
   return (
     <div id="intro-section" className="bg-gray-100">
       <section class="text-gray-600 body-font mx-20">
@@ -27,6 +30,40 @@ const Intro3 = () => {
                   width={600}
                   height={936}
                 />
+                <div className="absolute top-[8rem] w-[16rem] left-[8rem] z-10">
+                  <div className="flex flex-row place-items-center">
+                    <Image
+                      // className="object-cover object-center rounded"
+                      alt="hero"
+                      src="/hana-1q-logo-0.png"
+                      width="40%"
+                      height="30%"
+                    />
+                    <div className="text-2xl font-hanafont text-logo font-extrabold ml-2 drop-shadow-xl">
+                      Wedding
+                    </div>
+                  </div>
+                </div>
+                <video
+                  playsInline
+                  autoPlay
+                  muted
+                  loop
+                  className="absolute top-[14rem] h-[8rem] left-[7.8rem] shadow-xl"
+                >
+                  <source src={videoObjectSrc01} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <video
+                  playsInline
+                  autoPlay
+                  muted
+                  loop
+                  className="absolute top-[24rem] h-[8rem] left-[7.8rem] shadow-xl"
+                >
+                  <source src={videoObjectSrc02} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>

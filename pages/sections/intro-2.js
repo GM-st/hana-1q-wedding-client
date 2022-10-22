@@ -8,6 +8,8 @@ const Intro2 = () => {
     AOS.init();
   });
 
+  const videoObjectSrc = "videos/celebration-video-2210231202.mp4";
+
   return (
     <div id="intro-section" className="bg-white">
       <section class="text-gray-600 body-font mx-20">
@@ -28,7 +30,7 @@ const Intro2 = () => {
           <div class="flex flex-row lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <div className="items-center">
               <div
-                className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
+                className="relative lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
                 data-aos="fade-left"
                 data-aos-easing="linear"
                 data-aos-duration="1500"
@@ -40,6 +42,30 @@ const Intro2 = () => {
                   width={600}
                   height={936}
                 />
+                <div className="absolute top-[8rem] w-[16rem] left-[8rem] z-10">
+                  <div className="flex flex-row place-items-center">
+                    <Image
+                      // className="object-cover object-center rounded"
+                      alt="hero"
+                      src="/hana-1q-logo-0.png"
+                      width="40%"
+                      height="30%"
+                    />
+                    <div className="text-2xl font-hanafont text-logo font-extrabold ml-2 drop-shadow-xl">
+                      Wedding
+                    </div>
+                  </div>
+                </div>
+                <video
+                  playsInline
+                  autoPlay
+                  muted
+                  loop
+                  className="absolute top-[14rem] w-[16rem] left-[8rem]"
+                >
+                  <source src={videoObjectSrc} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>
