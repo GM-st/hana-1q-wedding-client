@@ -7,7 +7,7 @@ const Intro2 = () => {
       <section class="text-gray-600 body-font mx-20">
         <div class=" mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 class="title-font sm:text-5xl text-3xl mb-4 font-medium text-gray-900 delay-[300ms] duration-[600ms] taos:translate-x-[-200px] taos:opacity-0" data-taos-offset="400">
+            <h1 class="title-font sm:text-5xl text-3xl mb-4 font-medium text-gray-900">
               진심을 찍는<div className="mt-5"></div>1Q Wedding
             </h1>
           </div>

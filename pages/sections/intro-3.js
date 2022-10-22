@@ -21,7 +21,10 @@ const Intro3 = () => {
           </div>
           <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 class="title-font sm:text-5xl text-3xl mb-4 font-medium text-gray-900">
-              진심을 적는<div className="mt-2"></div>1Q Wedding
+              <div className="flex flew-row">
+                진심을 <p className="ml-2 text-red-600 drop-shadow-xl">적는</p>
+              </div>
+              <div className="mt-2"></div>1Q Wedding
             </h1>
           </div>
         </div>
