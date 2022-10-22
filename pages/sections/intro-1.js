@@ -1,4 +1,6 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Intro1 = () => {
   const videoObjectSrc = "videos/main-intro-video.MOV";
