@@ -24,7 +24,7 @@ const Player03 = () => {
                   // loop
                   // muted
                   poster="../celebration-canvas-image.png"
-                  className="rounded-xl bg-gray-900 bg-contain w-full h-full"
+                  className="rounded-xl bg-gray-100 bg-contain w-full h-full"
                 >
                   {/* <source src={videoObjectSrc} type="video/mp4" />
                   Your browser does not support the video tag. */}
