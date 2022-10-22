@@ -7,7 +7,10 @@ const Intro1 = () => {
 
   return (
     <div id="main-section" className="bg-gray-100 mx-40 my-20">
-      <div className="relative flex items-center justify-center h-screen overflow-hidden rounded-lg motion-safe:animate-fadeIn">
+      <div
+        className="relative flex items-center justify-center h-screen overflow-hidden rounded-lg"
+        data-aos="fade-zoom-in"
+      >
         <video
           playsInline
           autoPlay={false}

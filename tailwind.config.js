@@ -25,6 +25,7 @@ module.exports = {
     colors: {
       hana: "#008485",
       logo: "#04bba6",
+      hanaRed: "#e93361",
     },
   },
   variants: {

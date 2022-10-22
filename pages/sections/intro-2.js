@@ -20,7 +20,7 @@ const Intro2 = () => {
                 data-aos-easing="linear"
                 data-aos-duration="1500"
               >
-                진심을 <p className="ml-2 text-red-600 drop-shadow-xl">찍는</p>
+                진심을 <p className="ml-2 text-hanaRed drop-shadow-xl">찍는</p>
               </div>
               <div className="mt-2"></div>1Q Wedding
             </h1>
