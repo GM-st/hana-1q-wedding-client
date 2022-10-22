@@ -4,6 +4,7 @@ import Intro from "./sections/intro";
 import Main from "./sections/main";
 import Viewer from "./sections/viewer";
 import Chart from "./sections/chart";
+import Intro1 from "./sections/intro-1";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         {/* <Intro />
         <Viewer /> */}
         {/* <Chart /> */}
+        <Intro1 />
       </Layout>
     </div>
   );

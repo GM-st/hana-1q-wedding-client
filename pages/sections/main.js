@@ -15,7 +15,7 @@ const Main = () => {
       <div className="relative flex items-center justify-center h-screen overflow-hidden">
         <div className="relative z-30 p-5 text-white bg-opacity-50 rounded-xl mb-60 items-center">
           <h1 className="flex flex-col text-black text-4xl items-center justify-center text-center leading-sung sm:text-6xl md:text-6xl">
-            <p className="mb-3">한큐에 끝나는</p>
+            <p className="mb-3">한큐에 끝내는</p>
             <p className="">1Q Wedding</p>
           </h1>
           <div className="flex flex-col md:flex-row sm:flex-row lg:flex-row items-center justify-center mt-20">
