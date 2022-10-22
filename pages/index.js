@@ -5,6 +5,9 @@ import Main from "./sections/main";
 import Viewer from "./sections/viewer";
 import Chart from "./sections/chart";
 import Intro1 from "./sections/intro-1";
+import Intro2 from "./sections/intro-2";
+import Intro3 from "./sections/intro-3";
+import Intro4 from "./sections/intro-4";
 
 export default function Home() {
   return (
@@ -20,6 +23,9 @@ export default function Home() {
         <Viewer /> */}
         {/* <Chart /> */}
         <Intro1 />
+        <Intro2 />
+        <Intro3 />
+        <Intro4 />
       </Layout>
     </div>
   );
