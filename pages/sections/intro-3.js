@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -6,7 +6,19 @@ import "aos/dist/aos.css";
 const Intro3 = () => {
   useEffect(() => {
     AOS.init();
+    setPlayBack01();
+    setPlayBack02();
   });
+
+  const videoRef01 = useRef();
+  const videoRef02 = useRef();
+
+  const setPlayBack01 = () => {
+    videoRef01.current.playbackRate = 5;
+  };
+  const setPlayBack02 = () => {
+    videoRef02.current.playbackRate = 5;
+  };
 
   const videoObjectSrc01 = "videos/celebration-canvas-2210230132.mov";
   const videoObjectSrc02 = "videos/celebration-canvas-2210230127.mov";
@@ -49,6 +61,8 @@ const Intro3 = () => {
                   autoPlay
                   muted
                   loop
+                  ref={videoRef01}
+                  onCanPlay={() => setPlayBack01()}
                   className="absolute top-[14rem] h-[8rem] left-[7.8rem] shadow-xl"
                 >
                   <source src={videoObjectSrc01} type="video/mp4" />
@@ -59,6 +73,8 @@ const Intro3 = () => {
                   autoPlay
                   muted
                   loop
+                  ref={videoRef02}
+                  onCanPlay={() => setPlayBack02()}
                   className="absolute top-[24rem] h-[8rem] left-[7.8rem] shadow-xl"
                 >
                   <source src={videoObjectSrc02} type="video/mp4" />
