@@ -13,7 +13,7 @@ const Player01 = () => {
         <link rel="icon" href="/hana-1q-logo-0.png" />
       </Head>
       <Layout>
-        <div className="bg-teal-800">
+        <div className="bg-teal-800 h-[40rem] flex justify-center items-center">
           <div className="flex justify-center mx-20 py-20">
             <div className="flex-col items-center place-items-center">
               <div className="max-w-3xl">
