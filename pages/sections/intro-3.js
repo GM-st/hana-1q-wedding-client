@@ -30,7 +30,7 @@ const Intro3 = () => {
   const videoObjectSrc03 = "videos/celebration-canvas-2210230500.mov";
 
   return (
-    <div id="intro-section" className="bg-gray-100">
+    <div id="intro-section" className="bg-white">
       <section class="text-gray-600 body-font mx-20">
         <div class=" mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div class="flex flex-row lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
