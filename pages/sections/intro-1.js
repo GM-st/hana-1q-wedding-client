@@ -15,7 +15,6 @@ const Intro1 = () => {
           playsInline
           autoPlay={false}
           muted={false}
-          loop
           controls
           className="absolute z-10 w-auto min-w-full min-h-full max-w-none opacity-100"
         >
