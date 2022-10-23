@@ -9,7 +9,7 @@ const Intro4 = () => {
   });
 
   return (
-    <div id="intro-section" className="bg-gray-100">
+    <div id="intro-section" className="bg-white">
       <section class="text-gray-600 body-font mx-20">
         <div class=" mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
